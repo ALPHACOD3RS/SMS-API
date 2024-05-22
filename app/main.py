@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from .core.config import settings
 from app.db.session import engine, SessionLocal
-from app.db import base, models
+from app.db import base
+from app.db import models
 
 
-
+from app.db.models import *
 base.Base.metadata.create_all(bind=engine)
 
 

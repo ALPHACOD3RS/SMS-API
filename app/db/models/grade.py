@@ -1,6 +1,8 @@
 from sqlalchemy import Column, Integer, ForeignKey, Float
 from sqlalchemy.orm import relationship
-from app.db.base_class import Base
+# from app.db.base_class import Base
+from ..base import Base
+
 
 class Grade(Base):
     __tablename__ = "grades"

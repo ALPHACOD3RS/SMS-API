@@ -1,7 +1,9 @@
 # app/db/models/fee.py
 from sqlalchemy import Column, Integer, ForeignKey, Float, Date, String, Enum
 from sqlalchemy.orm import relationship
-from app.db.base_class import Base
+# from app.db.base_class import Base
+from ..base import Base
+
 import enum
 
 
