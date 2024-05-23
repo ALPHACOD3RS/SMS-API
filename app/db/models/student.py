@@ -11,7 +11,7 @@ class Student(Base):
     last_name = Column(String, nullable=False)
     date_of_birth = Column(Date, nullable=False)
     address = Column(String, nullable=True)
-    # class_id = Column(Integer, ForeignKey("classerooms.id"))
+    class_id = Column(Integer, ForeignKey("classrooms.id"))
 
     user = relationship("User", back_populates="students")
     enrollments = relationship("Enrollment", back_populates="student")
