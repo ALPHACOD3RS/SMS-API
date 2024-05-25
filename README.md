@@ -1,5 +1,3 @@
 # SCHOOL MANAGMENT AND PORTAL BACKEND API
 
 ## FastAPI
-
-project
